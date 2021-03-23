@@ -1,0 +1,14 @@
+.menuContainer {
+	display: flex;
+	flex-direction: column;
+
+	color: #3D3D3D;
+}
+
+.menuContainer > header > h1 {
+	font-weight: 900;
+}
+
+.menuContainer > section {
+	margin-top: 1.5rem;
+}

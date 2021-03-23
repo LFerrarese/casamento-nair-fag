@@ -1,0 +1,21 @@
+.navbarNav > ul {
+	display: flex;
+
+	list-style: none;
+}
+
+.navbarNav > ul > li {
+	margin: 0 1.6rem;
+}
+
+.navbarNav > ul > li > a {
+	font-size: 1.4rem;
+
+	cursor: pointer;
+
+	transition: 330ms;
+}
+
+.navbarNav > ul > li > a:hover {
+	color: rgba(0, 0, 0, 0.5);
+}

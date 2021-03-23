@@ -1,0 +1,31 @@
+.weddingCerimonyVenueContainer {
+	display: flex;
+	flex-direction: column;
+
+	color: #3D3D3D;
+}
+
+.weddingCerimonyVenueContainer > header > h1 {
+	font-weight: 900;
+}
+
+.weddingCerimonyVenueContainer > section > p {
+	margin-top: 1.5rem;
+
+	text-align: left;
+	font-weight: 600;
+}
+
+.weddingCerimonyVenueContainer > section > p > strong {
+	font-weight: 900;
+	color: var(--primary);
+}
+
+.weddingCerimonyVenueContainer > section > iframe {
+	width: 100%;
+	height: 450px;
+
+	border: 0;
+
+	margin-top: 1.5rem;
+}

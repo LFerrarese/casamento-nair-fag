@@ -1,0 +1,68 @@
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: rgba(242, 243, 245, 0.8);
+
+	animation-timing-function: ease-out;
+	animation-duration: 800ms;
+	animation-fill-mode: forwards;
+	animation-name: ModalOverlay;
+}
+
+.modalContainer {
+	position: relative;
+
+	width: 100%;
+	max-width: 600px;
+	max-height: 95%;
+
+	padding: 2rem 3rem;
+	border-radius: 5px;
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+	text-align: center;
+
+	background-color: white;
+
+	overflow: auto;
+}
+
+.closeModalButton {
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+
+	background: transparent;
+	fill: var(--border);
+
+	border: 0;
+
+	font-size: 0px;
+}
+
+.closeModalButton:active,
+.closeModalButton:focus {
+	outline-color: var(--border);
+}
+
+@media (max-width: 768px) {
+	.modalContainer {
+		max-width: 95%;
+	}
+}
+
+@keyframes ModalOverlay {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

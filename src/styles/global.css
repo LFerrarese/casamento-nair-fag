@@ -1,0 +1,35 @@
+:root {
+	--primary: #725C30;
+	--border: #E2D1B4;
+	--text: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+	html {
+		font-size: 93.75%;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 87.5%;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--text);
+}
+
+body, input, textarea, button, label {
+	font: 400 1rem "Cinzel", serif;
+}
+
+button {
+	cursor: pointer;
+}

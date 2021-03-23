@@ -1,0 +1,75 @@
+.homeContainer {
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.homeContainer > div:first-child {
+	position: relative;
+
+	min-height: 768px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	background: url('/img/home_bg.jpg') no-repeat center;
+	background-size: 100% 100%;
+}
+
+.homeContainerButtons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	max-width: 768px;
+}
+
+.homeContainerAdornment {
+	position: absolute;
+	bottom: 0;
+}
+
+.homeContainerFooter {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: var(--primary);
+
+	padding: 1rem;
+
+	border-top: 3px solid var(--border);
+}
+
+.homeContainerFooter > h1 {
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+.homeContainerFooter > h2 {
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+	.homeContainer {
+		max-width: 100vw;
+	}
+
+	.homeContainer > div {
+		max-width: 100vw;
+	}
+
+	.homeContainer > div:first-child {
+		padding: 2rem 0;
+	}
+
+	.homeContainer > div:first-child {
+		background-size: cover;
+	}
+}
