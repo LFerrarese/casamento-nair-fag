@@ -33,3 +33,5 @@ const WeddingInformations = () => {
 		</div>
 	)
 }
+
+export default WeddingInformations;
