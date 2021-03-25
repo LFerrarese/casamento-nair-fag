@@ -3,9 +3,7 @@ import axios from 'axios';
 interface PresenceData {
 	email: string;
 	name: string;
-	invited?: Array<{
-		name: string;
-	}>
+	invited?: Array<{ name: string; }>;
 };
 
 export const api = axios.create({
